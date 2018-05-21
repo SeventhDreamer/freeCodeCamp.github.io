@@ -1,3 +1,8 @@
+$(document).ready(function() {
+  document.getElementById('query').focus();
+ });
+
+
 function searchWikipedia(){
   $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&format=json&origin=*&search=" + document.getElementById("query").value,
       function(result) {
@@ -14,9 +19,6 @@ function searchWikipedia(){
     );
 }
 
-
-$(document).ready(function() {
-  document.getElementById('query').focus();
   $(".search2").on("click", function() {
     searchWikipedia();    
   });
@@ -24,4 +26,3 @@ $(document).ready(function() {
     if (a.keyCode ==13)
       searchWikipedia();
   });
-});
