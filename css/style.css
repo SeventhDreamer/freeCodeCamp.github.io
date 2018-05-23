@@ -1,12 +1,45 @@
-div{
-  text-align: center;
-}
-button{
-  color:blue;
-  font-size-adjust: 0.75;
-}
-
 body{
-  color:
+  background-color:#000066;
+}
+button:focus { 
+    outline: none; 
+}
+p{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: #e6ffff;
+  border: 1px solid;
+  border-radius: 2px;
+  background: #ccffff;
+  background: rgba(204, 255, 255, 0.6);
+}
+p.col-12 {
+    min-height: 50px;
+}
+.container{
+  position:absolute;
+  top:30%;
+  left:45%;
+  background-color:#0099ff;
+  border-radius: 8px;
+  width: 250px;
+  border: solid;
+  transition: all 0.3s ease-out;
+}
+.semi-transparent-button {
+  outline: none;
+  font-size-adjust: 0.75;
+  display: block;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 8px;
+  width: 80%;
+  background: #006699;  /*fallback color for old browsers */background: rgba(31, 53, 143, 0.3);
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
 }
 
