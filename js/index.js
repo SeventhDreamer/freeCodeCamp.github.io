@@ -68,7 +68,7 @@ function equals() {
 }
 
 //reset everything to the initial state
-document.getElementById("aclear").onclick = clear;
+document.getElementById("clear").onclick = clear;
 function clear() {
   document.getElementById("elm").innerHTML = "";
   document.getElementById("exp").innerHTML = "";
@@ -80,7 +80,7 @@ function clear() {
 
 
 //remove the last typed number
-document.getElementById("a<").onclick = function() {
+document.getElementById("backspace").onclick = function() {
   if (document.getElementById("elm").innerHTML != "") {
     var temp = "";
     temp = document.getElementById("elm").innerHTML;
@@ -105,7 +105,7 @@ function numberComplete() {
   document.getElementById("elm").innerHTML = "";
 }
 
-document.getElementById("ax").onclick = function() {
+document.getElementById("multiply").onclick = function() {
   if (!previouslyAnOperator) {
     addValue("x");
     numberComplete();
@@ -113,7 +113,7 @@ document.getElementById("ax").onclick = function() {
     previouslyAnOperator = true;
   }
 };
-document.getElementById("a+").onclick = function() {
+document.getElementById("add").onclick = function() {
   if (!previouslyAnOperator) {
     addValue("+");
     numberComplete();
@@ -121,7 +121,7 @@ document.getElementById("a+").onclick = function() {
     previouslyAnOperator = true;
   }
 };
-document.getElementById("a-").onclick = function() {
+document.getElementById("subtract").onclick = function() {
   if (!previouslyAnOperator) {
     addValue("-");
     numberComplete();
@@ -129,7 +129,7 @@ document.getElementById("a-").onclick = function() {
     previouslyAnOperator = true;
   }
 };
-document.getElementById("a/").onclick = function() {
+document.getElementById("divide").onclick = function() {
   if (!previouslyAnOperator) {
     addValue("/");
     numberComplete();
@@ -137,7 +137,7 @@ document.getElementById("a/").onclick = function() {
     previouslyAnOperator = true;
   }
 };
-document.getElementById("a=").onclick = function() {
+document.getElementById("equal").onclick = function() {
   if (!previouslyAnOperator) {
     integers.push(Number(document.getElementById("elm").innerHTML));
     numberComplete();
@@ -148,57 +148,57 @@ document.getElementById("a=").onclick = function() {
 };
 
 
-document.getElementById("a1").onclick = a1;
+document.getElementById("one").onclick = a1;
   function a1() {
   document.getElementById("elm").innerHTML += 1;
   previouslyAnOperator = false;
 }
-document.getElementById("a2").onclick = a2;
+document.getElementById("two").onclick = a2;
 function a2() {
   document.getElementById("elm").innerHTML += 2;
   previouslyAnOperator = false;
 }
-document.getElementById("a3").onclick = a3;
+document.getElementById("three").onclick = a3;
 function a3() {
   document.getElementById("elm").innerHTML += 3;
   previouslyAnOperator = false;
 }
-document.getElementById("a4").onclick = a4;
+document.getElementById("four").onclick = a4;
 function a4() {
   document.getElementById("elm").innerHTML += 4;
   previouslyAnOperator = false;
 }
-document.getElementById("a5").onclick = a5;
+document.getElementById("five").onclick = a5;
 function a5() {
   document.getElementById("elm").innerHTML += 5;
   previouslyAnOperator = false;
 }
-document.getElementById("a6").onclick = a6;
+document.getElementById("six").onclick = a6;
 function a6() {
   document.getElementById("elm").innerHTML += 6;
   previouslyAnOperator = false;
 }
-document.getElementById("a7").onclick = a7;
+document.getElementById("seven").onclick = a7;
 function a7() {
   document.getElementById("elm").innerHTML += 7;
   previouslyAnOperator = false;
 }
-document.getElementById("a8").onclick = a8;
+document.getElementById("eight").onclick = a8;
 function a8() {
   document.getElementById("elm").innerHTML += 8;
   previouslyAnOperator = false;
 }
-document.getElementById("a9").onclick = a9;
+document.getElementById("nine").onclick = a9;
 function a9() {
   document.getElementById("elm").innerHTML += 9;
   previouslyAnOperator = false;
 }
-document.getElementById("a0").onclick = a0;
+document.getElementById("zero").onclick = a0;
 function a0() {
   document.getElementById("elm").innerHTML += 0;
   previouslyAnOperator = false;
 }
-document.getElementById("a.").onclick = a;
+document.getElementById("period").onclick = a;
 function a() {
   document.getElementById("elm").innerHTML += ".";
 }
