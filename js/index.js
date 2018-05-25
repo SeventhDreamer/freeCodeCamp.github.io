@@ -200,5 +200,6 @@ function a0() {
 }
 document.getElementById("period").onclick = a;
 function a() {
+  if(document.getElementById("elm").innerHTML.indexOf(".") == -1)
   document.getElementById("elm").innerHTML += ".";
 }
