@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Javascript calculator</title>
+  <title>Javascript calculator with keyboard input</title>
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
@@ -15,40 +15,42 @@
 
 <body>
 
-  <div class="container">
+    <div class="container">
   <br>
   <div>
-    <p id="elm" class="col-12"> </p>
-    <p id="exp" class="col-12"> </p>
+    <p id="elm" class="minh"> </p>
+    <p id="exp" class="minh"> </p>
   </div>
-  
+  <br>
   <div class="wrapper">
     <button id="clear" class="semi-transparent-button">Clear</button>
     <button id="backspace" class="semi-transparent-button"><</button>
-    <button id="multiply" class="semi-transparent-button">x</button>
+    <button id="multiply" class="semi-transparent-button functionKey">x</button>
   
-    <button id="one" class="semi-transparent-button">1</button>
-    <button id="two" class="semi-transparent-button">2</button>
-    <button id="three" class="semi-transparent-button">3</button>
-    <button id="add" class="semi-transparent-button">+</button>
+    <button id="one" class="semi-transparent-button number">1</button>
+    <button id="two" class="semi-transparent-button number">2</button>
+    <button id="three" class="semi-transparent-button number">3</button>
+    <button id="add" class="semi-transparent-button functionKey">+</button>
   
-    <button id="four" class="semi-transparent-button">4</button>
-    <button id="five" class="semi-transparent-button">5</button>
-    <button id="six" class="semi-transparent-button">6</button>
-    <button id="subtract" class="semi-transparent-button">-</button>
+    <button id="four" class="semi-transparent-button number">4</button>
+    <button id="five" class="semi-transparent-button number">5</button>
+    <button id="six" class="semi-transparent-button number">6</button>
+    <button id="subtract" class="semi-transparent-button functionKey">-</button>
   
-    <button id="seven" class="semi-transparent-button">7</button>
-    <button id="eight" class="semi-transparent-button">8</button>
-    <button id="nine" class="semi-transparent-button">9</button>
-    <button id="divide" class="semi-transparent-button">/</button>
+    <button id="seven" class="semi-transparent-button number">7</button>
+    <button id="eight" class="semi-transparent-button number">8</button>
+    <button id="nine" class="semi-transparent-button number">9</button>
+    <button id="divide" class="semi-transparent-button functionKey">/</button>
   
-    <button id="zero" class="semi-transparent-button">0</button>
-    <button id="period" class="semi-transparent-button">.</button>
-    <button id="equal" class="semi-transparent-button">=</button>
+    <button id="zero" class="semi-transparent-button number">0</button>
+    <button id="period" class="semi-transparent-button number">.</button>
+    <button id="equal" class="semi-transparent-button functionKey">=</button>
   </div>
 	<br>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://raw.githubusercontent.com/dmauro/Keypress/development/keypress-2.1.5.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
   
 
@@ -56,7 +58,7 @@
 
 
 
-    
+
 </body>
 
 </html>

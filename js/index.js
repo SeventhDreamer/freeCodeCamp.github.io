@@ -358,4 +358,3 @@ keyPressListener.simple_combo(".", function() {
 keyPressListener.simple_combo("num_decimal", function() {
   a();
 });
-
